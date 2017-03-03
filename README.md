@@ -1,18 +1,27 @@
-# MailGunEmailValidator
-validation rule to validate emali using [Mailgun Api](http://documentation.mailgun.com/api-email-validation.html).
+# EmailValidator
+- ### MailGunValidatorServiceProvider
+Email validation using [Mailgun Api](http://documentation.mailgun.com/api-email-validation).
 
-- register providor
+- ### EguliasValidatorServiceProvider
+Email validation using [Egulias EmailValidator](https://github.com/egulias/EmailValidator).
+
+- ### ValidatorPizzaServiceProvider
+Email validation using [Validator.pizza](https://www.validator.pizza)
+
+1 - register providor
 
 ```php
 'providers' => [
     App\Providers\MailGunValidatorServiceProvider::class,
+    // App\Providers\EguliasValidatorServiceProvider::class,
+    // App\Providers\ValidatorPizzaServiceProvider::class,
 ]
 ```
 
-- add the rule to the validator
+2 - add the rule to the validator
 
 ```php
-'email' => 'required|email|mailgun',
+'email' => 'required|email|isValid',
 ```
 
 # ToDo

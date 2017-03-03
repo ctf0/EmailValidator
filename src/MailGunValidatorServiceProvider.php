@@ -13,7 +13,7 @@ class MailGunValidatorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Validator::extend('mailgun', function ($attribute, $value, $parameters, $validator) {
+        Validator::extend('isValid', function ($attribute, $value, $parameters, $validator) {
             $req = (new Client())->get('https://api.mailgun.net/v3/address/validate', [
                 'query' => [
                     'address' => $value,
