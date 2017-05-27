@@ -1,12 +1,9 @@
 # EmailValidator
-- ### MailGunValidatorServiceProvider
-Email validation using [Mailgun Api](http://documentation.mailgun.com/api-email-validation).
+- ### MailGunValidatorServiceProvider [Mailgun Api](http://documentation.mailgun.com/api-email-validation).
 
-- ### EguliasValidatorServiceProvider
-Email validation using [Egulias EmailValidator](https://github.com/egulias/EmailValidator).
+- ### EguliasValidatorServiceProvider [Egulias EmailValidator](https://github.com/egulias/EmailValidator).
 
-- ### ValidatorPizzaServiceProvider
-Email validation using [Validator.pizza](https://www.validator.pizza)
+- ### ValidatorPizzaServiceProvider [Validator.pizza](https://www.validator.pizza)
 
 1 - register providor
 
