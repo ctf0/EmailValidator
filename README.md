@@ -24,6 +24,17 @@ Email validation using [Validator.pizza](https://www.validator.pizza)
 'email' => 'required|email|isValid',
 ```
 
+3 - add the translation keys
+
+```php
+'custom' => [
+    // ...
+    'email' => [
+        'isValid' => 'This :attribute is invalid',
+    ],
+],
+```
+
 # ToDo
 
 * [ ] Turn into Package.
