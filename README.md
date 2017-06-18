@@ -5,23 +5,30 @@
 
 - ### ValidatorPizzaServiceProvider [Validator.pizza](https://www.validator.pizza)
 
-1 - register providor
+
+## Installation
+
+- `composer require ctf0/email-validator`
+
+- add the service provider to `config/app.php`
 
 ```php
 'providers' => [
-    App\Providers\MailGunValidatorServiceProvider::class,
-    // App\Providers\EguliasValidatorServiceProvider::class,
-    // App\Providers\ValidatorPizzaServiceProvider::class,
+    ctf0\EmailValidator\MailGunValidatorServiceProvider::class,
+    // ctf0\EmailValidator\EguliasValidatorServiceProvider::class,
+    // ctf0\EmailValidator\ValidatorPizzaServiceProvider::class,
 ]
 ```
 
-2 - add the rule to the validator
+## Usage
+
+- add the rule to the validator
 
 ```php
-'email' => 'required|email|isValid',
+'email' => 'required|email|isValid'
 ```
 
-3 - add the translation keys
+- add the translation keys
 
 ```php
 'custom' => [
@@ -31,7 +38,3 @@
     ],
 ],
 ```
-
-# ToDo
-
-* [ ] Turn into Package.
