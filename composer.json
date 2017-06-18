@@ -1,0 +1,29 @@
+{
+    "name": "ctf0/email-validator",
+    "description": "validation rule to validate email for Laravel",
+    "homepage": "https://github.com/ctf0/EmailValidator",
+    "license": "MIT",
+    "keywords": [
+        "ctf0",
+        "EmailValidator"
+    ],
+    "authors": [
+        {
+            "name": "Muah",
+            "email": "muah003@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "5.2.*|5.3.*|5.4.*|5.5.*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ctf0\\EmailValidator\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

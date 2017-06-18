@@ -9,9 +9,9 @@
 
 ```php
 'providers' => [
-    App\Providers\MailGunValidatorServiceProvider::class,
-    // App\Providers\EguliasValidatorServiceProvider::class,
-    // App\Providers\ValidatorPizzaServiceProvider::class,
+    ctf0\EmailValidator\MailGunValidatorServiceProvider::class,
+    // ctf0\EmailValidator\EguliasValidatorServiceProvider::class,
+    // ctf0\EmailValidator\ValidatorPizzaServiceProvider::class,
 ]
 ```
 
@@ -31,7 +31,3 @@
     ],
 ],
 ```
-
-# ToDo
-
-* [ ] Turn into Package.

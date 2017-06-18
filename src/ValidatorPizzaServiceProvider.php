@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Providers;
+namespace ctf0\EmailValidator;
 
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
-use Validator;
 
 class ValidatorPizzaServiceProvider extends ServiceProvider
 {
@@ -35,6 +35,5 @@ class ValidatorPizzaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(\App\Providers\ValidatorPizzaServiceProvider::class);
     }
 }
