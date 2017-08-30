@@ -3,8 +3,8 @@
 namespace ctf0\EmailValidator;
 
 use GuzzleHttp\Client;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Validator;
 
 class ValidatorPizzaServiceProvider extends ServiceProvider
 {
@@ -14,11 +14,11 @@ class ValidatorPizzaServiceProvider extends ServiceProvider
     public function boot()
     {
         Validator::extend('isValid', function ($attribute, $value, $parameters, $validator) {
-            $req = (new Client())->get('https://www.validator.pizza/email/'.$value);
+            $req = (new Client())->get('https://www.validator.pizza/email/' . $value);
             $body = json_decode($req->getBody()->getContents());
 
             switch ($body) {
-                case $body->status == 400:
+                case 400 == $body->status:
                     return false;
                 case !$body->mx:
                     return false;
@@ -28,12 +28,5 @@ class ValidatorPizzaServiceProvider extends ServiceProvider
                     return true;
             }
         }, 'This email is invalid');
-    }
-
-    /**
-     * Register the application services.
-     */
-    public function register()
-    {
     }
 }

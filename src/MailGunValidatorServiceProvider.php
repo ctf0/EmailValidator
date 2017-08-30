@@ -3,8 +3,8 @@
 namespace ctf0\EmailValidator;
 
 use GuzzleHttp\Client;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Validator;
 
 class MailGunValidatorServiceProvider extends ServiceProvider
 {
@@ -24,12 +24,5 @@ class MailGunValidatorServiceProvider extends ServiceProvider
 
             return json_decode($req->getBody()->getContents())->is_valid;
         }, 'This email is invalid');
-    }
-
-    /**
-     * Register the application services.
-     */
-    public function register()
-    {
     }
 }
