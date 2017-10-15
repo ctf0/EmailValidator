@@ -17,7 +17,7 @@ class MailGunValidatorServiceProvider extends ServiceProvider
             $req = (new Client())->get('https://api.mailgun.net/v3/address/validate', [
                 'query' => [
                     'address' => $value,
-                    'api_key' => env('MAILGUN_API_KEY', 'pubkey-83a6-sl6j2m3daneyobi87b3-ksx3q29'),
+                    'api_key' => config('services.mailgun.key'),
                 ],
                 'auth'   => null,
             ]);
