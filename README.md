@@ -20,6 +20,15 @@
 ]
 ```
 
+- add the mailgun api key to your `config/service.php` file
+```
+'mailgun' => [
+    'domain' => env('MAILGUN_DOMAIN'),
+    'secret' => env('MAILGUN_SECRET'),
+    'key' => env('MAILGUN_KEY'),
+],
+```
+
 ## Usage
 
 - add the rule to the validator
