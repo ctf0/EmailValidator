@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/ctf0/email-validator.svg?style=for-the-badge)](https://packagist.org/packages/ctf0/email-validator) [![Total Downloads](https://img.shields.io/packagist/dt/ctf0/email-validator.svg?style=for-the-badge)](https://packagist.org/packages/ctf0/email-validator)
 
-- MailGunValidatorServiceProvider [Mailgun Api](http://documentation.mailgun.com/api-email-validation).
+- MailGunValidatorServiceProvider [Mailgun Api](http://documentation.mailgun.com/api-email-validation). "[No Longer Free](http://blog.mailgun.com/mailgun-rolls-out-changes-to-email-validation-api-including-new-pricing-model-and-features/)"
 - EguliasValidatorServiceProvider [Egulias EmailValidator](https://github.com/egulias/EmailValidator).
 - ValidatorPizzaServiceProvider [Validator.pizza](https://www.validator.pizza)
 
