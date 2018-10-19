@@ -18,7 +18,7 @@ class ValidatorPizzaServiceProvider extends ServiceProvider
             $body = json_decode($req->getBody()->getContents());
 
             switch ($body) {
-                case 400 == $body->status:
+                case $body->status == 400:
                     return false;
                 case !$body->mx:
                     return false;
